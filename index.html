@@ -1,0 +1,53 @@
+<!-- Challenge 3 -->
+<!-- Eduardo Fakiani RM556093 - Fernanda Menon RM554673 - Luiza Macena RM556237 -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Connect</title>
+    <!-- FavIcon para aparecer o icone da nossa rede social no topo da aba -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <!-- Importando nosso css para estilizar a pagina -->
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- Script para ter o fundo de particulas -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Container usado para ter as particulas no fundo -->
+    <div id="particles-container"></div>
+    <div class="container">
+        <!-- Container da direita com o formulario para postar -->
+        <div class="post-form-container">
+            <img src="images/logo.png" class="logo">
+            <form id="postForm">
+                <textarea id="postText" placeholder="Write your post..."></textarea>
+                <select id="postCategory">
+                    <option value="">Select Category</option>
+                    <option value="News">News</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Tech">Tech</option>
+                </select>
+                <input type="text" id="image1" placeholder="Image URL 1">
+                <input type="text" id="image2" placeholder="Image URL 2">
+                <input type="text" id="image3" placeholder="Image URL 3">
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <!-- Container da esquerda contendo todos os posts -->
+        <div class="post-feed-container">
+            <select id="filterCategory">
+                <option value="">All Categories</option>
+                <option value="News">News</option>
+                <option value="Sports">Sports</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Tech">Tech</option>
+            </select>
+            <div id="postList" class="post-list"></div>
+        </div>
+    </div>
+    <!-- Importar nosso script para fazer as interaçoes funcionar -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>
