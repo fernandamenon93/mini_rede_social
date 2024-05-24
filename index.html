@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Rede Social</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Rede Social FDL</h1>
+    <form id="postForm">
+        <label for="postText">Texto do Post:</label><br>
+        <textarea id="postText" name="postText" rows="4" cols="50"></textarea><br>
+        
+        <label for="category">Categoria:</label>
+        <select id="category" name="category">
+            <option value="categoria1">Categoria 1</option>
+            <option value="categoria2">Categoria 2</option>
+            <option value="categoria3">Categoria 3</option>
+        </select><br>
+
+        <label for="image1">URL da Imagem 1:</label><br>
+        <input type="text" id="image1" name="image1"><br>
+        
+        <label for="image2">URL da Imagem 2:</label><br>
+        <input type="text" id="image2" name="image2"><br>
+        
+        <label for="image3">URL da Imagem 3:</label><br>
+        <input type="text" id="image3" name="image3"><br>
+        
+        <button type="submit">Criar Post</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Adicione este código abaixo do formulário -->
+<div id="postList"></div>
+
+
+<!-- Inclua o CSS do Slick Carousel -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
+<!-- Inclua o CSS do tema padrão do Slick Carousel -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<!-- Inclua o JavaScript do Slick Carousel -->
+<div class="post">
+    <h3>Categoria</h3>
+    <p>Texto do Post</p>
+    <div class="carousel">
+        <div><img src="imagem1.jpg" alt="Imagem 1"></div>
+        <div><img src="imagem2.jpg" alt="Imagem 2"></div>
+        <div><img src="imagem3.jpg" alt="Imagem 3"></div>
+    </div>
+    <button>Editar</button>
+    <button>Excluir</button>
+</div>
