@@ -1,47 +1,56 @@
+/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Cor de fundo do corpo */
-    color: #333; /* Cor do texto principal */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #555; /* Dark gray text color */
 }
 
+/* Container Styles */
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+/* Heading Styles */
 h1 {
     text-align: center;
-    color: #444; /* Cor do título principal */
+    color: #333; /* Dark title color */
     margin-bottom: 30px;
 }
 
-/* Estilos para o formulário de criação de post */
+/* Form Styles */
 form {
-    background-color: #fff;
+    background-color: #f0f0f0; /* Light gray background */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Labels */
 form label {
     display: block;
     margin-bottom: 10px;
-    color: #555; /* Cor do texto do rótulo */
+    color: #777; /* Darker gray label text color */
 }
 
+/* Inputs and Textarea Styles */
 form textarea, form input[type="text"], form select {
-    width: 100%;
+    width: calc(100% - 22px); /* Adjusting for padding and border */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+/* Submit Button Styles */
 form button {
-    background-color: #2ecc71; /* Cor de fundo do botão */
+    background-color: #007bff; /* Blue submit button */
     color: white;
     padding: 12px 20px;
     border: none;
@@ -51,11 +60,12 @@ form button {
     transition: background-color 0.3s ease;
 }
 
+/* Button Hover */
 form button:hover {
-    background-color: #27ae60; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Estilos para os posts */
+/* Post Styles */
 .post {
     background-color: #fff;
     margin-bottom: 20px;
@@ -64,23 +74,29 @@ form button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Post Heading Styles */
 .post h3 {
     margin-top: 0;
-    color: #3498db; /* Cor do título do post */
+    color: #6c757d; /* Grayish-blue post title color */
 }
 
+/* Post Paragraph Styles */
 .post p {
     margin-bottom: 10px;
+    color: #666; /* Dark grayish text */
 }
 
+/* Image Styles */
 .post img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Post Button Styles */
 .post button {
-    background-color: #e74c3c; /* Cor de fundo do botão */
+    background-color: #dc3545; /* Red delete button */
     color: white;
     padding: 8px 15px;
     border: none;
@@ -90,78 +106,7 @@ form button:hover {
     transition: background-color 0.3s ease;
 }
 
+/* Post Button Hover */
 .post button:hover {
-    background-color: #c0392b; /* Cor de fundo do botão ao passar o mouse */
-}
-
-/* Estilos para o carrossel de imagens */
-.carousel {
-    width: 100%;
-    margin-top: 15px;
-    position: relative;
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Estilos para os botões de navegação do carrossel */
-.slick-prev,
-.slick-next {
-    font-size: 24px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.slick-prev {
-    left: 10px;
-}
-
-.slick-next {
-    right: 10px;
-}
-
-/* Estilos para os pontos de navegação do carrossel */
-.slick-dots {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.slick-dots li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.slick-dots li button {
-    font-size: 0;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.slick-dots li button:hover,
-.slick-dots li.slick-active button {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #bd2130; /* Darker red on hover */
 }
